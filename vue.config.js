@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/vuetest/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-ts-test/' : '/',
     outputDir: 'docs'
 }
