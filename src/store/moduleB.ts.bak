@@ -1,0 +1,45 @@
+// import {Module, VuexModule, Mutation, Action} from 'vuex-module-decorators';
+//
+// @Module({namespaced:true, name:'moduleB'})
+// export default class ModuleB extends VuexModule{
+//
+//     category = 'beginner';
+//
+//     @Mutation
+//     setCategory(category: string){
+//         this.category = category;
+//         console.log(category);
+//     }
+//
+//     @Action
+//     setRootData(category: string) {
+//         this.context.commit('setCategory', category);
+//     }
+//
+//     get moduleBCategory(){
+//         return this.category;
+//     }
+// }
+
+// const module: Module<moduleB,RootState>={
+//     namespaced: true,
+//     state:{
+//         category:'beginner'
+//     },
+//     mutations:{
+//         setCategory(state, category: string){
+//             state.category = category;
+//             console.log(category);
+//         },
+//     },
+//     actions:{
+//         setRootData({commit}, category: string) {
+//             commit('setCategory', category);
+//         }
+//     },
+//     getters:{
+//         category: (state) => state.category,
+//     },
+// }
+//
+// export default module;

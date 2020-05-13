@@ -1,26 +1,34 @@
 import Vue from 'vue'
 import VueRouter, {RouteConfig} from 'vue-router'
-import DevVue from '../views/DevVue.vue'
-import Ch1 from "@/components/Ch1.vue";
-import Ch2 from "@/components/Ch2.vue";
+import Beginner from '../views/Beginner.vue'
+import Junior from '../views/Junior.vue'
+import BeginnerCh1 from "@/components/BeginnerCh1.vue";
+import BeginnerCh2 from "@/components/BeginnerCh2.vue";
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
     {
-        path: '/vue',
-        component: DevVue,
-        // component: () => import(/* webpackChunkName: "about" */ '../views/DevVue.vue'),
+        path: '/beginner',
+        component: Beginner,
+        // component: () => import(/* webpackChunkName: "about" */ '../views/Beginner.vue'),
         children:[
             {
                 path: '/ch1',
-                component: Ch1,
+                component: BeginnerCh1,
             },
             {
                 path: '/ch2',
-                component: Ch2,
+                component: BeginnerCh2,
             },
         ]
+    },
+    {
+        path: '/junior',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: Junior,
     },
     {
         path: '/about',
