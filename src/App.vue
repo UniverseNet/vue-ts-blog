@@ -26,7 +26,6 @@
     @Component
     export default class App extends Vue {
         @Action readonly setRootData: undefined;
-
         @Mutation readonly setCategory: undefined;
     }
 </script>
