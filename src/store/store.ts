@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex, {ActionContext, StoreOptions} from 'vuex'
+import Vuex, {StoreOptions} from 'vuex'
 // import moduleB from "@/store/moduleB";
 
 Vue.use(Vuex)

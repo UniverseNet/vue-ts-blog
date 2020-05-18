@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div>
         <b-navbar type="dark" variant="dark">
             <b-navbar-nav>
                 <b-nav-item @click="setRootData('beginner')" to="/beginner">
