@@ -2,6 +2,9 @@
     <div>
         <b-navbar type="dark" variant="dark">
             <b-navbar-nav>
+                <b-nav-item @click="setRootData('')" to="/">
+                    Home
+                </b-nav-item>
                 <b-nav-item @click="setRootData('beginner')" to="/beginner">
                     Vue Beginner
                 </b-nav-item>
