@@ -66,8 +66,12 @@
                 export default router
             </code>
         </pre>
-        router.ts 파일을 다음과 같이 수정 했는데 Router의 component를 설정하는 방법에는 해당 코드에서 직접 import 함수를 지정해주는 방법과<br>
+        router.ts 파일을 다음과 같이 수정 했는데 Route의 component를 설정하는 방법에는 해당 코드에서 직접 import 함수를 지정해주는 방법과<br>
         스크립트에서 import한 객체를 지정해주는 방법 등 여러가지가 있다.<br>
+        각각의 Route객체들은 children을 설정해줄 수 있는데 children은 각 Router 영역 내 또다른 Router Link를 설정하는 것이다.<br>
+        <br>
+        <br>
+        <br>
 
 
     </div>
