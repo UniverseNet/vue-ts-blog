@@ -80,7 +80,10 @@
 
     </div>
 </template>
+<script>
 
+
+</script>
 <style scoped>
     div { padding: 1rem; }
 </style>
