@@ -73,15 +73,22 @@
         <br>
         <br>
 
-
+        <Gist1></Gist1>
     </div>
 </template>
+
+<script>
+import Gist1 from "@/components/Gist1";
+export default {
+  components: {Gist1}
+}
+</script>
 <style scoped>
-    div { padding: 1rem; }
-    pre code {
-        background-color: #eee;
-        border: 1px solid #999;
-        display: block;
-        padding: 20px;
-    }
+div { padding: 1rem; }
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
 </style>

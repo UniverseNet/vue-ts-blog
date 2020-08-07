@@ -4,13 +4,14 @@ import Beginner from '../views/Beginner.vue'
 import Junior from '../views/Junior.vue'
 import BeginnerCh1 from "@/components/BeginnerCh1.vue";
 import BeginnerCh2 from "@/components/BeginnerCh2.vue";
+import Header from "@/components/Header.vue";
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
     {
         path: '/beginner',
-        component: Beginner,
+        components: {default : Beginner, header: Header},
         // component: () => import(/* webpackChunkName: "about" */ '../views/Beginner.vue'),
         children:[
             {

@@ -10,6 +10,9 @@ export interface RootState {
 }
 
 const store: StoreOptions<RootState>={
+  modules: {
+    // moduleB,
+  },
   state:{
     category: 'beginner',
   },
@@ -24,9 +27,6 @@ const store: StoreOptions<RootState>={
     setRootData({commit}, category: string) {
       commit('setCategory', category);
     }
-  },
-  modules: {
-    // moduleB,
   },
   getters:{
     category: (state) => state.category,

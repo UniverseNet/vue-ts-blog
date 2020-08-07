@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <p>
-            Junior Page
-        </p>
-        <router-view />
-    </div>
+  <div>
+    <p>
+      Junior Page
+    </p>
+    <router-view/>
+  </div>
 </template>
 
 <!--<script>-->
